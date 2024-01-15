@@ -13,7 +13,7 @@ function App() {
 	return (
 		<>
 			<Router />
-			<ToastContainer containerId='app-toast' />
+			<ToastContainer position='bottom-right' containerId='app-toast' />
 		</>
 	);
 }
