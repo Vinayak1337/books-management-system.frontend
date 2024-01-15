@@ -138,7 +138,7 @@ function* unpublishBook(action: ReturnType<typeof unpublishBookStart>) {
 			message: 'Unpublishing book...'
 		});
 
-		yield axios.delete(`${API_PATH_NAMES.UNPUBLISH_BOOK}/${action.payload}`);
+		yield axios.delete(`${API_PATH_NAMES.UNPUBLISH_BOOK}${action.payload}`);
 
 		promiseToast({
 			id: unpublishBookStart.type,
